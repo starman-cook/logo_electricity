@@ -1,0 +1,98 @@
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+// Header
+.header {   
+    &__container {
+        max-width: 1160px;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__right-side {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.logo {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: #31436a;
+}
+.btn {
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+    display: flex;
+    border: none;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    height: 39px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #fff;
+    background: #021747;
+    &--header {
+        width: 119px;
+    }
+}
+.burger-menu {
+    position: relative;
+    &__icon {
+        display: inline-block;
+        width: 81px;
+        height: 81px;
+        cursor: pointer;
+        user-select: none;
+        background: url(../images/icon-menu-burger.svg)center no-repeat;
+    }
+    &__text {
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 32px;
+        text-transform: uppercase;
+        color: #d9ddE7;
+        transform: rotate(90deg);
+        display: none;
+    }
+    &__line {
+        display: inline-block;
+        background: #6f7e9e;
+        width: 1px;
+        height: 100vh;
+        display: none;
+    }
+    &__dropdown {
+        width: 320px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        position: absolute;
+        top: 81px;
+        right: 81px;
+        display: none;
+    }
+    &__link {
+        margin: 20px 0;
+        text-decoration: none;
+        color: #d9ddE7;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: uppercase;
+    }
+    &__icon:hover &__dropdown,
+    &__dropdown:hover {
+        display: block;
+
+    }
+}
