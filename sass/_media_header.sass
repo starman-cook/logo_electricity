@@ -3,9 +3,13 @@
         display: flex
     .burger-menu__icon 
         margin-left: 48px
-@media screen and (min-width: 1200px) 
+@media screen and (min-width: 1024px) 
+    .btn--header
+        margin-right: 90px
     .header__container 
         height: 81px
+    .header__line
+        display: none
     .burger-menu 
         position: fixed
         right: 0
@@ -21,11 +25,14 @@
         &__line 
             display: inline-block
             position: absolute
+            right: 81px
         &__text 
             display: inline-block
         &__dropdown 
             right: 81px
             top: 0
             bottom: 0
+            border-top: none
             border-right: 1px solid #6f7e9e
             border-left: 1px solid #6f7e9e
+            border-bottom: none

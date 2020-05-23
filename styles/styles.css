@@ -2,6 +2,9 @@ body {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
 
+.header {
+  position: relative;
+}
 .header__container {
   max-width: 1160px;
   margin: 0 auto;
@@ -14,6 +17,14 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.header__line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 81px;
+  height: 1px;
+  background: #6f7e9e;
 }
 
 .logo {
@@ -79,8 +90,11 @@ body {
   background: #fff;
   position: absolute;
   top: 81px;
+  border-top: 1px solid #6f7e9e;
+  border-bottom: 1px solid #6f7e9e;
   right: -20px;
   display: none;
+  z-index: 1;
 }
 .burger-menu__link {
   margin: 20px 0;
@@ -113,9 +127,17 @@ body {
     margin-left: 48px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
+  .btn--header {
+    margin-right: 90px;
+  }
+
   .header__container {
     height: 81px;
+  }
+
+  .header__line {
+    display: none;
   }
 
   .burger-menu {
@@ -135,6 +157,7 @@ body {
   .burger-menu__line {
     display: inline-block;
     position: absolute;
+    right: 81px;
   }
   .burger-menu__text {
     display: inline-block;
@@ -143,8 +166,10 @@ body {
     right: 81px;
     top: 0;
     bottom: 0;
+    border-top: none;
     border-right: 1px solid #6f7e9e;
     border-left: 1px solid #6f7e9e;
+    border-bottom: none;
   }
 }
 
