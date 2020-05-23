@@ -5,7 +5,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 36px;
     &__right-side {
         display: flex;
         justify-content: space-between;
@@ -91,7 +90,7 @@
         border-bottom: 1px solid #6f7e9e;
         right: -20px;
         display: none;
-        z-index: 1;
+        z-index: 100;
     }
     &__link {
         margin: 20px 0;
@@ -115,7 +114,8 @@
         align-items: center;
         justify-content: center;
     }
-    &__dropdown:hover~&__text {
+    &__dropdown:hover~&__text,
+    &__icon:hover~&__text {
         color: #021747;
     }
 }

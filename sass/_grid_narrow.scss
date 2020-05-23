@@ -1,0 +1,45 @@
+.grid {
+    &__name-narrow {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 23%;
+        left: 15%;
+    }
+    &__title--narrow {
+        font-weight: 800;
+        font-size: 26px;
+        line-height: 32px;
+        margin-bottom: 12px;
+    }
+    &__text--btn {
+        box-sizing: border-box;
+        display: flex;
+        padding-left: 10px;
+        align-items: center;
+        width: 166px;
+        height: 42px;
+        border: 1px solid #fff;
+        font-size: 14px;
+        line-height: 18px;
+        text-transform: uppercase;
+        position: relative;
+    }
+    &__text--btn::after {
+        content: '';
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background: url(../images/ic-arrow-right.svg)center no-repeat;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    &__text--btn:hover {
+        background: #fff;
+        color: #021747;
+    }
+    &__text--btn:hover::after {
+        background: url(../images/ic-arrow-right-hover.svg);
+    }
+}
