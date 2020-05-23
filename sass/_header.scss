@@ -1,14 +1,11 @@
 // Header
 .header {   
     position: relative;
-    &__container {
-        max-width: 1160px;
-        margin: 0 auto;
-        padding: 0 20px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+    height: 81px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 36px;
     &__right-side {
         display: flex;
         justify-content: space-between;
@@ -21,6 +18,7 @@
         top: 81px;
         height: 1px;
         background: #6f7e9e;
+        margin: 0 -20px;
     }
 }
 .logo {
@@ -30,6 +28,9 @@
     line-height: 29px;
     text-transform: uppercase;
     color: #31436a;
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 .btn {
     cursor: pointer;
@@ -51,12 +52,14 @@
         width: 119px;
         display: none;
     }
+    &:hover {
+        filter: opacity(0.8);
+    }
 }
 .burger-menu {
     position: relative;
     &__icon {
-        display: inline-block;
-        width: 40px;
+        width: 81px;
         height: 81px;
         cursor: pointer;
         user-select: none;

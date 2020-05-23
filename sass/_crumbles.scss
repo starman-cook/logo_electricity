@@ -1,0 +1,18 @@
+.crumbles {
+    max-width: 210px;
+    display: flex;
+    justify-content: space-between;
+    &__link {
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #021747;
+        opacity: 0.5;
+        user-select: none;
+    }
+    &__link:nth-child(odd):hover {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+}
