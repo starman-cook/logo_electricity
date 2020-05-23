@@ -70,9 +70,10 @@
         font-size: 26px;
         line-height: 32px;
         text-transform: uppercase;
-        color: #d9ddE7;
+        color: #d9dde7;
         transform: rotate(90deg);
         display: none;
+        user-select: none;
     }
     &__line {
         background: #6f7e9e;
@@ -113,5 +114,9 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+    &__dropdown:hover~&__text,
+    &__text:hover {
+        color: #021747;
     }
 }
