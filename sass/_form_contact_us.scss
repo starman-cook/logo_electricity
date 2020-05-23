@@ -1,0 +1,113 @@
+.form-container {
+    background: #021747;
+    box-sizing: border-box;
+    padding: 30px 16px;
+    margin-bottom: 50px;
+}
+.form {
+    &__title {
+        font-weight: 900;
+        font-size: 19px;
+        line-height: 23px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    &__input-row {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__input {
+        box-sizing: border-box;
+        flex-grow: 1;
+        height: 42px;
+        outline: none;
+        margin-bottom: 20px;
+        padding: 12px;
+    }
+    &__input::placeholder {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        color: #6a7798;
+        opacity: 0.5;
+    }
+    &__input--textarea {
+        width: 100%;
+        min-height: 62px;
+        margin-right: 0;
+        resize: none;
+    }
+}
+.form-checkbox {
+    display: flex;
+    flex-direction: column;
+    &__label {
+        margin-bottom: 10px;
+    }
+    &__label--push-down {
+        margin-bottom: 30px;
+    }
+    &__input {
+        display: none;
+    }
+    &__text {
+        display: flex;
+        align-items: center;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 30px;
+        color: #6a7798;
+        cursor: pointer;
+        user-select: none;
+    }
+    &__text:before {
+        content: '';
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        margin-right: 13px;
+        flex-shrink: 0;
+    }
+    &__input:checked~&__text:before {
+        background: url(../images/ic-checkbox-checked.svg)center no-repeat;
+    }
+    &__btn {
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        padding-left: 15px;
+        text-align: left;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 18px;
+        text-transform: uppercase;
+        color: #fff;
+        align-self: center;
+        width: 256px;
+        height: 42px;
+        cursor: pointer;
+        border: 1px solid #FFFFFF;
+        background: transparent;
+    }
+    &__btn:after {
+        content: '';
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background: url(../images/ic-arrow-right.svg)center no-repeat;
+        margin-left: auto;
+        padding-right: 15px;
+    }
+    &__btn:hover {
+        background: #fff;
+        color: #021747;
+    }
+    &__btn:hover::after{
+        background: url(../images/ic-arrow-right-hover.svg)center no-repeat;
+    }
+}
