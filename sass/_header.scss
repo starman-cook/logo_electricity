@@ -18,7 +18,7 @@
         top: 81px;
         height: 1px;
         background: #6f7e9e;
-        margin: 0 -20px;
+        margin: 0 -15px;
     }
 }
 .logo {
@@ -115,8 +115,7 @@
         align-items: center;
         justify-content: center;
     }
-    &__dropdown:hover~&__text,
-    &__text:hover {
+    &__dropdown:hover~&__text {
         color: #021747;
     }
 }

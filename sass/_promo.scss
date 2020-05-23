@@ -5,6 +5,10 @@
     &__title {
         @extend %title;
     }
+    &__title--main {
+        font-size: 32px;
+        line-height: 39px;
+    }
     &__text {
         @extend %text;
     }

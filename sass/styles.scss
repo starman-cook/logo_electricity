@@ -4,7 +4,7 @@ body {
 .master-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 15px;
 }
 .narrow-container {
     max-width: 940px;
@@ -12,10 +12,11 @@ body {
 }
 %title {
     font-weight: 900;
-    font-size: 32px;
-    line-height: 39px;
+    font-size: 26px;
+    line-height: 32px;
     text-transform: uppercase;
     color: #021747;
+    margin-bottom: 10px;
 }
 %text {
     font-weight: normal;
@@ -23,9 +24,16 @@ body {
     line-height: 30px;
     color: #6a7798;
 }
+// MASTER CONTAINER MEDIA
+@import 'media_master_container';
 // HEADER
 @import 'header';
 @import 'media_header';
+// CRUMBLES
 @import 'crumbles';
+// PROMO
 @import 'promo';
 @import 'media_promo';
+// GRID WIDE
+@import 'grid_wide';
+@import 'media_grid_wide';
