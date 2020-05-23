@@ -1,0 +1,88 @@
+.promo {
+    &--push-down {
+        margin-bottom: 70px;
+    }
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__title--push-down {
+        margin-bottom: 30px;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+    }
+    &__link {
+        @extend %text;
+        text-decoration: none;
+    }
+    &__link:hover {
+        color: #021747;
+    }
+    &__rates {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    &__clutch {
+        width: 145px;
+        position: relative;
+        margin-bottom: 50px;
+    }
+    &__clutch:before {
+        content: '';
+        display: inline-block;
+        width: 33px;
+        height: 37px;
+        background: url(../images/ic-clutch.svg)center no-repeat;
+    }
+    &__link-clutch {
+        position: absolute;
+        top: 0;
+        right: 0;
+        text-decoration: none;
+    }
+    &__reviews-clutch {
+        position: absolute;
+        bottom: 0;
+        left: 45px;
+    }
+
+    &__glassdoor {
+        width: 190px;
+        position: relative;
+    }
+    &__glassdoor:before {
+        content: '';
+        display: inline-block;
+        width: 27px;
+        height: 37px;
+        background: url(../images/ic-glassdoor.svg)center no-repeat;
+    }
+    &__link-glassdoor {
+        position: absolute;
+        top: 0;
+        right: 0;
+        text-decoration: none;
+    }
+    &__reviews-glassdoor {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: #0D0D0D;
+    }
+    &__word-reviews {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #0D0D0D;
+        position: absolute;
+        bottom: 0;
+        left: 40px;
+    }
+    &__arrow {
+        padding-bottom: 5px;
+    }
+}

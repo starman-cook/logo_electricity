@@ -22,7 +22,7 @@ body {
   margin-bottom: 10px;
 }
 
-.promo__text {
+.promo__link, .promo__text {
   font-weight: normal;
   font-size: 16px;
   line-height: 30px;
@@ -473,6 +473,90 @@ body {
   .form-checkbox__btn {
     width: 377px;
   }
+}
+.promo--push-down {
+  margin-bottom: 70px;
+}
+.promo__row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.promo__title--push-down {
+  margin-bottom: 30px;
+}
+.promo__list {
+  display: flex;
+  flex-direction: column;
+}
+.promo__link {
+  text-decoration: none;
+}
+.promo__link:hover {
+  color: #021747;
+}
+.promo__rates {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.promo__clutch {
+  width: 145px;
+  position: relative;
+  margin-bottom: 50px;
+}
+.promo__clutch:before {
+  content: "";
+  display: inline-block;
+  width: 33px;
+  height: 37px;
+  background: url(../images/ic-clutch.svg) center no-repeat;
+}
+.promo__link-clutch {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-decoration: none;
+}
+.promo__reviews-clutch {
+  position: absolute;
+  bottom: 0;
+  left: 45px;
+}
+.promo__glassdoor {
+  width: 190px;
+  position: relative;
+}
+.promo__glassdoor:before {
+  content: "";
+  display: inline-block;
+  width: 27px;
+  height: 37px;
+  background: url(../images/ic-glassdoor.svg) center no-repeat;
+}
+.promo__link-glassdoor {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-decoration: none;
+}
+.promo__reviews-glassdoor {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #0D0D0D;
+}
+.promo__word-reviews {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #0D0D0D;
+  position: absolute;
+  bottom: 0;
+  left: 40px;
+}
+.promo__arrow {
+  padding-bottom: 5px;
 }
 
 /*# sourceMappingURL=styles.css.map */
