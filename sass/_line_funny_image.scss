@@ -1,0 +1,23 @@
+.line {
+    height: 1px;
+    width: 100%;
+    background: #d5dae6;
+    margin-bottom: 60px;
+    position: relative;
+    &__image {
+        position: absolute;
+        display: none;
+    }
+    &__image--robe {
+        right: 200px;
+        bottom: -48px;
+    }
+    &__image--robe-blur {
+        right: 160px;
+        bottom: -58px;
+    }
+    &__image--contur {
+        right: 170px;
+        bottom: -103px;
+    }
+}
