@@ -584,6 +584,10 @@ body {
   bottom: -103px;
 }
 
+.footer {
+  margin-bottom: 60px;
+}
+
 @media screen and (min-width: 1350px) {
   .line__image {
     display: inline;
@@ -661,6 +665,22 @@ body {
   .social-net__image-link {
     display: none;
   }
+}
+.copyright {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background: #00091D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.copyright__text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=styles.css.map */
